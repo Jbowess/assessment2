@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: white;
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 1200px;
+}
+
+h1 {
+    text-align: left;
+    color: #cecece;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    padding: 15px; /* Adjusted for more spacing */
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px; /* Adjusted font size */
+}
+td {
+    padding: 15px; /* Adjusted for more spacing */
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px; /* Adjusted font size */
+}
+
+th {
+    background-color: #f9f9f9;
+    font-weight: bold;
+}
+
+td.target-score, td.total-points {
+    text-align: center; /* Center text in Target Score and Total Points columns */
+}
+
+td.actual-score {
+    text-align: center; /* Center text in Actual Score column */
+}
+
+.score {
+    display: inline-block; /* Makes the colored area smaller */
+    width: 100px; /* Adjusted width to make the colored area smaller */
+    font-weight: bold;
+    text-align: center;
+    padding: 10px; /* Adjusted for more padding */
+    border-radius: 4px;
+    font-size: 14px; /* Adjusted font size */
+}
+
+.score.high {
+    background-color: #39a352;
+    color: #f5f5f5;
+}
+
+.score.low {
+    background-color: rgb(248, 96, 108);
+    color: #ffffff;
+}
+
+tbody tr:hover {
+    background-color: #f0f0f0; /* Slightly dim the row on hover */
+}
